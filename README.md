@@ -1,1 +1,1 @@
-# Create 10 Python GUIs with TKinter by Michael Eramo
+# Create 10 Python GUIs with Tkinter by Michael Eramo

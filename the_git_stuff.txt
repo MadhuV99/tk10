@@ -1,5 +1,5 @@
 cd C:/Users/madhu/vscprojects/tk10
-echo "# Create 10 Python GUIs with TKinter by Michael Eramo" >> README.md
+echo "# Create 10 Python GUIs with Tkinter by Michael Eramo" >> README.md
 git init 
 git add README.md 
 git commit -m "first commit" 
