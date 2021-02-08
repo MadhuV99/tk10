@@ -36,13 +36,5 @@ test_4.grid(row=3, column=0, padx=5, pady=5)
 test_5.grid(row=3, column=1, padx=5, pady=5)
 test_6.grid(row=3, column=2, padx=5, pady=5, sticky='W')
 
-
-
-
-
-
-
-
-
 #Run root window's main loop
 root.mainloop()

@@ -4,7 +4,7 @@ import tkinter
 #Define window
 root = tkinter.Tk()
 root.title('Windows Basics!')
-root.iconbitmap('thinking.ico')
+root.iconbitmap('thinking.ico') # from www.iconarchive.com
 root.geometry('300x700')
 root.resizable(0, 0)
 root.config(bg='blue')
