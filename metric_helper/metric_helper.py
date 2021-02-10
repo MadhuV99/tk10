@@ -56,7 +56,6 @@ def convert():
 #Define layout
 #Create the input and output entry fields
 input_field = tkinter.Entry(root, width=20, font=field_font, borderwidth=3)
-#output_field = tkinter.Entry(root, width=20, font=field_font, borderwidth=3)
 output_label = tkinter.Label(root, width=20, font=field_font, borderwidth=3)
 equal_label = tkinter.Label(root, text="=", font=field_font, bg=bg_color)
 
