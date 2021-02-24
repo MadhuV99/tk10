@@ -1,7 +1,7 @@
 # apod_viewer 
 import tkinter, requests, webbrowser
 from tkinter import filedialog
-from tkcalendar import DateEntry
+from tkcalendar import DateEntry # To use with auto-py-to-exe, add hidden imports of module 'babel.numbers' (without quotes)
 from PIL import ImageTk, Image
 from io import BytesIO
 
