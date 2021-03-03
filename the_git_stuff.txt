@@ -1,12 +1,13 @@
-cd C:/Users/madhu/vscprojects/tk10
-echo "# Create 10 Python GUIs with Tkinter by Michael Eramo" >> README.md
+cd C:/Users/madhu/vscprojects/shubham_tk_sql3
+echo "# Create Coin Portfolio in Python with Tkinter and Sqlite3 by Subham Sarda" >> README.md
 git init 
 git add README.md 
 git commit -m "first commit" 
 git branch -M main 
-git remote add origin https://github.com/MadhuV99/tk10.git 
+git remote add origin https://github.com/MadhuV99/shubham_tk_sql3.git 
 git push -u origin main 
 
 git add -A 
 git commimt -m "Latest Commit" 
 git push shinjuLast1MM 
+
