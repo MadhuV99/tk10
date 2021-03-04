@@ -2,29 +2,29 @@ from tkinter import *
 from PIL import Image, ImageTk
 
 #place an image on the grid
-def display_logo(url, row, column, root):
+def display_logo(url, row, column):
     img = Image.open(url)
     img = img.resize((int(img.size[0]/1.5),int(img.size[1]/1.5)))
     img = ImageTk.PhotoImage(img)
-    img_label = Label(root, image=img, bg="white")
+    img_label = Label(image=img, bg="white")
     img_label.image = img
     img_label.grid(column=column, row=row, rowspan=2, sticky=NW, padx=20, pady=40)
 
-def display_icon(url, row, column, stick, funct, root):
+def display_icon(url, row, column, stick, funct):
     icon = Image.open(url)
     icon = icon.resize((20,20))
     icon = ImageTk.PhotoImage(icon)
-    icon_label = Button(root,image=icon, command=funct, width=25, height=25)
+    icon_label = Button(image=icon, command=funct, width=25, height=25)
     icon_label.image = icon
     icon_label.grid(column=column, row=row, sticky=stick)
 
-#place a textbox on the pages
-def display_textbox(content, row, col, root):
+#place a tebox on the pages
+def display_textbox(content, ro, col, root):
     text_box = Text(root, height=10, width=30, padx=10, pady=10)
     text_box.insert(1.0, content)
     text_box.tag_configure("center", justify="center")
     text_box.tag_add("center", 1.0, "end")
-    text_box.grid(column=col, row=row, sticky=SW, padx=25, pady=25)
+    text_box.grid(column=col, row=ro, sticky=SW, padx=25, pady=25)
 
 #resizing the displayed image while keeping its ratio
 def resize_image(img):
@@ -68,8 +68,7 @@ def extract_images(page):
                     mode = "CMYK"
                 img = Image.frombytes(mode, size, data)
                 images.append(img)
-    return images 
-
+    return images
 
 #SAVE IMAGE MENUE
 #button functionality
@@ -90,3 +89,4 @@ def save_image(img):
     if img.mode != "RGB":
         img = img.convert("RGB")
     img.save("img.png", format="png")
+    
